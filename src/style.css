@@ -1,0 +1,41 @@
+.Login{
+    width:30%;
+    position: relative;
+    margin:auto;
+}
+.Login > h1 {
+    text-align: center;
+}
+.form-wrapper{
+    position: relative;
+    width:100%;
+}
+.formLogin{
+    position: relative;
+    width:100%;
+}
+.form-wrapper::before{
+    content:"";
+    position: relative;
+    display: block;
+    width:100%;
+    height:5px;
+    top:0;
+    bottom:0;
+    border-radius:5px 5px 0px 0px;
+    background-image: linear-gradient(to right top, #051937, #101d48, #241f57, #3b1d63, #55156c);
+}
+.formLogin > input {
+    width:100%;
+    font-size:1.5vw;
+    padding:5px;
+    box-sizing: border-box;
+}
+.formLogin > button {
+    color:white;
+    width:100%;
+    padding:5px;
+    font-size:1.5vw;
+    border:1px solid black;
+    background-image: linear-gradient(to right top, #051937, #101d48, #241f57, #3b1d63, #55156c);
+}
