@@ -10,7 +10,6 @@ export default ({childProps})=>{
    { console.log(childProps)}
       <AppliedRoute path="/test" exact component={Test} props={childProps} />
       <AppliedRoute path="/" exact component={Login} props={childProps} />
-      { /* Finally, catch all unmatched routes */ }
     </Switch>
   </Router>);
 }
