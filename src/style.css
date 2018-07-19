@@ -30,6 +30,8 @@
     font-size:1.5vw;
     padding:5px;
     box-sizing: border-box;
+    border:1px solid #241f57;
+    transition:0.5s;
 }
 .formLogin > button {
     color:white;
@@ -37,5 +39,6 @@
     padding:5px;
     font-size:1.5vw;
     border:1px solid black;
+    border-radius: 0px 0px 5px 5px; 
     background-image: linear-gradient(to right top, #051937, #101d48, #241f57, #3b1d63, #55156c);
 }

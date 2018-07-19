@@ -10,12 +10,13 @@ class App extends Component{
     constructor(){
         super();
         this.state={
-          isAuthenticated:false
+          isAuthenticated:localStorage.getItem('auth')
         }
         this.userHasAuthenticated=this.userHasAuthenticated.bind(this);
       }
       userHasAuthenticated = (authenticated)=>{
-        this.setState({ isAuthenticated: authenticated });
+        localStorage.setItem('auth',authenticated);
+        this.setState({isAuthenticated:localStorage.getItem('auth')});
       }
       render() {
         const childProps = {
